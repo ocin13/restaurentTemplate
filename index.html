@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Place Restaurent</title>
+</head>
+
+
+
+<body>
+    <div id="reserveModal" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Reserve Now</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="col-12 px-5">
+                    <img class="img-fluid" src="https://cdn.pixabay.com/photo/2015/05/15/14/55/cafe-768771_1280.jpg">
+                </div>
+                <form>
+                    <div class="form-row px-2 mb-5">
+                      <div class="col-12 col-sm-2 mx-auto mb-2">
+                        <input type="text" class="form-control" placeholder="Name">
+                      </div>
+                      <div class="col-12 col-sm-2 mx-auto mb-2">
+                        <input type="email" class="form-control" placeholder="Email">
+                      </div>
+                      <div class="col-12 col-sm-2 mx-auto mb-2 ">
+                        <input type="date" class="form-control" placeholder="Date">
+                      </div>
+                      <div class="col-12 col-sm-2 mx-auto mb-2">
+                        <input type="time" class="form-control" placeholder="Time">
+                      </div>
+                      <div class="col-12 col-sm-2 mx-auto mb-2">
+                        <input type="number" class="form-control" placeholder="Person">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                        <button type="button" class="btn btn-secondary mr-3" data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btnModal">Reserve</button>
+                    </div>
+                  </form>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!--navigation bar-->
+  <nav  class="navbar navbar-expand-lg sticky-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="fa fa-bars btnMenu"></span>
+    </button>
+    <a class="navbar-brand" href="index.html">Ocin<span class="realise">realise</span></a>
+  
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      <ul class="navbar-nav ml-auto mt-2 mt-lg-0 pr-5">
+        <li class="nav-item  mx-2">
+          <a class="nav-link" href="#">Home </a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="aboout.html">About us</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="menu.html">Menu</a>
+        </li>
+        <li class="nav-item mx-2">
+            <a class="nav-link " href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Events
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Single</a>
+              <a class="dropdown-item" href="#">Group</a>
+              <a class="dropdown-item" href="#">close date</a>
+            </div>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0 d-none d-md-block">
+        <input id="search" class="form-control mr-sm-2 collapse"  type="search" placeholder="Search" aria-label="Search">
+        <button class="btn searchBtn my-2 my-sm-0" type="button" data-toggle="collapse" data-target="#search"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </nav>
+<!--end navbar-->  
+<div class="container-fluid px-0 page">
+    
+    <div class="row  bg-1 text-center">
+        
+        <div class="col-12 wrap row-content">
+            
+            <div class="col-12 col-sm-8 mx-auto">
+                <img class="img-fluid" src="/img/logo-restaurent.png">
+            <h1 class="mb-5">place restaurent</h1>
+            <P>4445 place avenue,figo city DA</P>
+            <P class="mb-3"><i class="fa fa-clock-o">10:00 am-11:00 pm  </i>   <i class="fa fa-phone"></i>  900200123</P>
+            <P class="mb-3">We introduce new cultures to visitors through cuisines of 
+            various countries, offering a special dish for everyone regardless of their food preferences.</P>
+            <button class="btn reserveBtn" data-toggle="modal" data-target="#reserveModal">Make A Reservation</button>
+            </div>    
+        </div>
+    </div>
+    <div class="row row-content bg-2 px-5">
+        <div class="col-12 col-md-6 px-5">
+            <h2 class="mb-5">Welcome</h2>
+            <h4 class="mb-4"><span class="to">to</span> our restaurent</h4>
+            <P class="mb-5">Would you like to savor the exquisite cuisine and bring the art of dining
+                 to a new level? We obtain the freshest products from reputable purveyors and incorporate 
+                 them into our exclusive dishes. Our menus are influenced by culinary traditions of Europe, 
+                 Far East and other parts of the world. We are open to experiments and often add new dishes to our a la carte menu. 
+                Our courteous and attentive waiters in smoking jackets will bring you anything you wish.</P>
+        </div>
+        <div class="col-12 col-md-6 px-5 align-self-center">
+            <img class="img-fluid " src="https://cdn.pixabay.com/photo/2017/01/26/02/06/platter-2009590_1280.jpg" >
+        </div>
+    </div>
+    <div class="row row-content bg-3 text-center">
+        <div class="col">
+            <h1 class="mb-5">Our Menu</h1>
+            <h3>breakfast | lunch | dinner</h3>
+        </div>
+    </div>
+    <div class="row row-content bg-4">
+        <div class="col-12">
+            <ul class="ourMenu">
+                <li><a role="button" id="all">All</a></li>
+                <li><a role="button" id="breakfast">Breakfast</a></li>
+                <li><a role="button" id="lunch">Lunch</a></li>
+                <li><a role="button" id="dinner">Dinner</a></li>
+                <li><a role="button" id="dessert">Dessert</a></li>
+                <li><a role="button" id="drinks">Drinks</a></li>
+            </ul>
+        </div>
+        <div class="row row-content px-3">
+            <div class="col-12 col-sm-4 px-5 breakfast open">
+                <h5>OLD TIMER'S BREAKFAST---$22.00</h5>
+                <p>( Two eggs cooked to order with grits,
+                sawmill gravy, homemade buttermilk biscuits
+                 & real butter )</p>
+            </div>
+            <div class="col-12 col-sm-4 px-5 dinner lunch open">
+                <h5>TURKEY MILANESE---$22.00</h5>
+                <p>( Two eggs cooked to order with grits,
+                sawmill gravy, homemade buttermilk biscuits
+                 & real butter )</p>
+            </div>
+            <div class="col-12 col-sm-4 px-5 lunch dinner open">
+                <h5>OUR FAMOUS PRAWN LINGUINE---$22.00</h5>
+                <p>( Two eggs cooked to order with grits,
+                sawmill gravy, homemade buttermilk biscuits
+                 & real butter )</p>
+            </div>
+            <!--start new line-->
+            <div class="col-12 col-sm-4 px-5 dessert open">
+                <h5>FRESH START SAMPLER---$22.00</h5>
+                <p>( Two eggs cooked to order with grits,
+                sawmill gravy, homemade buttermilk biscuits
+                 & real butter )</p>
+            </div>
+            <div class="col-12 col-sm-4 px-5 lunch dinner open">
+                <h5>FRITTO MISTO---$19.00</h5>
+                <p>( Two eggs cooked to order with grits,
+                sawmill gravy, homemade buttermilk biscuits
+                 & real butter )</p>
+            </div>
+            <div class="col-12 col-sm-4 px-5 breakfast open">
+                <h5>GNOCCHI GENOVESE---$27.00</h5>
+                <p>( Two eggs cooked to order with grits,
+                sawmill gravy, homemade buttermilk biscuits
+                 & real butter )</p>
+            </div>
+             <!--start new line-->
+             <div class="col-12 col-sm-4 px-5 breakfast open">
+                <h5>DOUBLE MEAT BREAKFAST---$32.00</h5>
+                <p>( Two eggs cooked to order with grits,
+                sawmill gravy, homemade buttermilk biscuits
+                 & real butter )</p>
+            </div>
+            <div class="col-12 col-sm-4 px-5 lunch dinner open">
+                <h5>ITALIAN STEAK FRITES---$42.00</h5>
+                <p>( Two eggs cooked to order with grits,
+                sawmill gravy, homemade buttermilk biscuits
+                 & real butter )</p>
+            </div>
+            <div class="col-12 col-sm-4 px-5 lunch dinner open">
+                <h5>PENNE CARBONARA---$19.00</h5>
+                <p>( Two eggs cooked to order with grits,
+                sawmill gravy, homemade buttermilk biscuits
+                 & real butter )</p>
+            </div>
+             <!--start new line-->
+             <div class="col-12 col-sm-4 px-5 dessert open">
+                <h5>CRAB & AVOCADO BRUSCHETTA---$25.00</h5>
+                <p>( Two eggs cooked to order with grits,
+                sawmill gravy, homemade buttermilk biscuits
+                 & real butter )</p>
+            </div>
+            <div class="col-12 col-sm-4 px-5 breakfast open">
+                <h5>BAKED CRESPELLE---$32.00</h5>
+                <p>( Two eggs cooked to order with grits,
+                sawmill gravy, homemade buttermilk biscuits
+                 & real butter )</p>
+            </div>
+            <div class="col-12 col-sm-4 px-5 dessert open">
+                <h5>THREE-CHEESE CARAMELLE---$19.00</h5>
+                <p>( Two eggs cooked to order with grits,
+                sawmill gravy, homemade buttermilk biscuits
+                 & real butter )</p>
+            </div>
+            <div class="col-12 col-sm-4 px-5 dessert open">
+                <h5>TIRAMISÙ---$32.00</h5>
+                <p>( Two eggs cooked to order with grits,
+                sawmill gravy, homemade buttermilk biscuits
+                 & real butter )</p>
+            </div>
+            <div class="col-12 col-sm-4 px-5 breakfast open">
+                <h5>RASBERY & HONEYCOMB PAVLOVA---$19.00</h5>
+                <p>( Two eggs cooked to order with grits,
+                sawmill gravy, homemade buttermilk biscuits
+                 & real butter )</p>
+            </div>
+        </div>
+    </div> 
+    <div class="row row-content bg-5 text-center">
+        <div class="col">
+            <h1 class="mb-5">Our Gallery</h1>
+            <h3>check for our nearest location</h3>
+        </div>
+    </div>
+    <div class="row row-content bg-6">
+        <div class="col-12 col-sm-4 px-4 mb-3 imgFrame">
+            <div class="row mb-3">
+                <div class="col-6 ">
+                    <img class="img-fluid" src="https://cdn.pixabay.com/photo/2014/05/18/11/25/pizza-346985__340.jpg">
+                </div>
+                <div class="col-6">
+                    <img class="img-fluid" src="https://cdn.pixabay.com/photo/2017/09/30/15/10/pizza-2802332__340.jpg">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <img class="img-fluid" src="https://cdn.pixabay.com/photo/2015/03/26/09/54/restaurant-690569__340.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-4 px-4 mb-3 imgFrame">
+            <div class="row">
+                <div class="col-12">
+                    <img class="img-fluid" src="https://cdn.pixabay.com/photo/2015/07/02/10/38/woman-828888__340.jpg">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-6">
+                    <img class="img-fluid" src="https://cdn.pixabay.com/photo/2015/03/26/09/42/breakfast-690128__340.jpg">
+                </div>
+                <div class="col-6">
+                    <img class="img-fluid" src="https://cdn.pixabay.com/photo/2015/03/26/10/28/restaurant-691397__340.jpg">
+                </div>
+            </div>
+           
+        </div>
+        <div class="col-12 col-sm-4 px-4 mb-3 imgFrame">
+            <div class="row mb-3">
+                <div class="col-6">
+                    <img class="img-fluid" src="https://cdn.pixabay.com/photo/2017/06/06/22/37/italian-cuisine-2378729__340.jpg">
+                </div>
+                <div class="col-6">
+                    <img class="img-fluid" src="https://cdn.pixabay.com/photo/2015/09/02/12/43/meal-918639__340.jpg">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <img class="img-fluid" src="https://cdn.pixabay.com/photo/2016/03/05/19/02/salmon-1238248__340.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row row-content bg-7 text-center">
+        <div class="col-12 col-sm-10 mx-auto" >
+            <h1>reserve now</h1>
+        <h4 class="mb-5">we make every experiece great here</h4>
+        <span class="orangeBar"></span>
+        <form>
+            <div class="form-row px-2">
+              <div class="col-12 col-sm-2 mx-auto mb-2">
+                <input type="text" class="form-control" placeholder="Name">
+              </div>
+              <div class="col-12 col-sm-2 mx-auto mb-2">
+                <input type="email" class="form-control" placeholder="Email">
+              </div>
+              <div class="col-12 col-sm-2 mx-auto mb-2 ">
+                <input type="date" class="form-control" placeholder="Date">
+              </div>
+              <div class="col-12 col-sm-2 mx-auto mb-2">
+                <input type="time" class="form-control" placeholder="Time">
+              </div>
+              <div class="col-12 col-sm-2 mx-auto mb-2">
+                <input type="number" class="form-control" placeholder="Person">
+              </div>
+            </div>
+          </form>
+          <div class="col-12 mt-5">
+              <button type="submit" class="btn reserveBtn">Make A Reservation</button>
+          </div>
+        </div>
+    </div>
+    <div class="row row-content bg-8">
+        <div class="col-12 col-sm-4 mx-auto px-4">
+            <h3>ocin realise</h3>
+            <h6>Address:</h6>
+            <p>28 Jackson Blvd Ste
+                1020 Chicago
+                IL 60604-2340.</p>
+            <p><h6>Phone: </h6>+1 968 222 1456</p>
+            <p><h6>E-mail: </h6>mail@placerestaurent.com</p>
+        </div>
+        <div class="col-12 col-sm-4 mx-auto px-4">
+            <form>
+                <div class="form-row">
+                    <input type="text" class="form-control mb-3" placeholder="Name:">
+                </div>
+                <div class="form-row">
+                    <input type="email" class="form-control mb-3" placeholder="E-mail:">
+                </div>
+                <div class="form-row">
+                    <textarea type="text" class="form-control mb-3" placeholder="message"></textarea>
+                </div>
+                <div class="form-row">
+                    <button type="submit" class="btn mb-3">send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="/js/scripts.js"></script>
+</body>
+
+</html>
