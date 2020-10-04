@@ -1,10 +1,15 @@
 $color-button: #ee4c0c;
 $color-hover: #f3b01f;
+html{
+    margin: 0;
+    padding: 0;
+}
 body{
     margin: 0;
     padding: 0;
     text-transform: capitalize;
     background-color: rosybrown;
+    overflow-x: hidden;
 }
 
 .row-content{
@@ -52,11 +57,13 @@ body{
     color: #fff;
 }
 .nav-link{
+    width: 100%;
+    text-align: center;
     transition: 0.5s;
     text-decoration: none;
     color: #fff;
     font-weight: 600;
-    text-shadow: black 2px 2px 8px ;
+    text-shadow: black 4px 4px 8px ;
 }
 .nav-link:hover{
     border-bottom: 2px $color-button solid;
@@ -463,6 +470,7 @@ nav{
     background-color: white;
     input{
         border-radius: 0;
+        width: 80%;
     }
     h1{
         font-family: lobster;
@@ -472,6 +480,7 @@ nav{
     textarea{
         border-radius: 0;
         height: 250px;
+        width: 90%;
     }
     button{
         background-color: $color-button;

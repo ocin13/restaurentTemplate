@@ -1,8 +1,13 @@
+html {
+  margin: 0;
+  padding: 0; }
+
 body {
   margin: 0;
   padding: 0;
   text-transform: capitalize;
-  background-color: rosybrown; }
+  background-color: rosybrown;
+  overflow-x: hidden; }
 
 .row-content {
   padding: 50px 0; }
@@ -39,11 +44,13 @@ body {
   color: #fff; }
 
 .nav-link {
+  width: 100%;
+  text-align: center;
   transition: 0.5s;
   text-decoration: none;
   color: #fff;
   font-weight: 600;
-  text-shadow: black 2px 2px 8px; }
+  text-shadow: black 4px 4px 8px; }
 
 .nav-link:hover {
   border-bottom: 2px #ee4c0c solid;
@@ -386,14 +393,16 @@ nav {
 .bg-ct-1 {
   background-color: white; }
   .bg-ct-1 input {
-    border-radius: 0; }
+    border-radius: 0;
+    width: 80%; }
   .bg-ct-1 h1 {
     font-family: lobster;
     letter-spacing: 7px;
     font-size: 3.4em; }
   .bg-ct-1 textarea {
     border-radius: 0;
-    height: 250px; }
+    height: 250px;
+    width: 90%; }
   .bg-ct-1 button {
     background-color: #ee4c0c;
     color: white;
